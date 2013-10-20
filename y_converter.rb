@@ -11,8 +11,8 @@ opt_parser = OptionParser.new do |opt|
   opt.banner = "Usage: opt_parser COMMAND [OPTIONS]"
   opt.separator  ""
   opt.separator  "Commands"
-  opt.separator  "     flat: Outputs YAML in flat format"
-  opt.separator  "     nested: Outputs YAML in nested format"
+  opt.separator  "     flat: converts the YAML file to a flat format"
+  opt.separator  "     nested: converts the YAML file to a nested format"
   opt.separator  ""
   opt.separator  "Options"
 

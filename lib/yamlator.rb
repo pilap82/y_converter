@@ -1,3 +1,6 @@
+# YAMLator by Henrik Nyh <http://henrik.nyh.se> 2010-02-03 under the MIT license.
+# Helps you update Rails i18n YAML files programmatically, to be used e.g. for
+# editor extraction tools.
 
 require "yaml"
 require "rubygems"
@@ -69,39 +72,3 @@ private
   end
 
 end
-
-# if __FILE__ == $0
-
-#   def banner(text, first=false)
-#     unless first
-#       puts
-#       puts
-#     end
-#     puts "### #{text}: ###"
-#     puts
-#   end
-
-#   data = DATA.read
-
-#   banner "Building from nothing", :first
-
-#   y = YAMLator.new
-#   y['sv.foo.bar'] = 123
-#   puts y.to_yaml
-
-#   banner "Modifying"
-
-#   y = YAMLator.new(data)
-#   y['sv.some.foo.bar.baz'] = "boink"
-#   puts y.to_yaml
-
-#   banner "Flattening"
-
-#   puts y.to_flat_yaml
-
-#   banner "Unflattening"
-
-#   y = YAMLator.new("one.two.three: hej\none.two.four: ho\none.five: wat")
-#   puts y.to_nested_yaml
-
-# end
