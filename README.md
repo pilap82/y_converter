@@ -13,22 +13,22 @@ One of the nice benefits of this conversion library is that it will also sort al
 
 To transform a nested yaml file to a flat format, use:
 
-    y_converter.rb flat -f </path/to/your_file.yml>
+    y_converter.rb flat -f /path/to/your_file.yml
 
 The flat yml file will be saved in the same location as
 
-    path/to/your_file.flat.yml
+    /path/to/your_file.flat.yml
 
 
 ## Flat to nested
 
 To transform a flat yaml file to a nested format, use:
 
-    y_converter.rb nested -f </path/to/your_file.yml>
+    y_converter.rb nested -f /path/to/your_file.yml
 
 The nested yml file will be saved in the same location as
 
-    path/to/your_file.nested.yml
+    /path/to/your_file.nested.yml
 
 In all cases, your original file will not be touched.
 
@@ -58,11 +58,18 @@ It looks like this:
     fr.actions.destroy: Supprimer
 
 
-# License
-This library is licensed under an MIT license.
 
 # Todo
 
 * Simplify the workflow of switching from nested to flat to nested
 * Making this a lot more robust than what it currently is
 * Detect if a file is in a nested or flat format and do not attemps to flatten an already flat yaml file
+
+# Contributing
+
+* Please issue pull requests to the development branch. All development happens here, master is used for releases.
+* Try to make things as robust as possible :)
+
+
+# License
+y_converter is released under an [MIT license](http://www.opensource.org/licenses/MIT).
